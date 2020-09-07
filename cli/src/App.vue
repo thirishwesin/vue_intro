@@ -3,9 +3,9 @@
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <router-link class="navbar-brand" to="/">
           <img src="./assets/logo.png" width="30" height="30" alt="" loading="lazy">
-        </a>
+        </router-link>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -23,7 +23,7 @@
       </div>
     </nav>
     <div class="container">
-      <div class="row">
+      <div class="row my-3">
         <div class="col-md-12">
           <router-view></router-view>
         </div>
@@ -43,7 +43,7 @@
 export default {
   name: 'App',
   mounted(){
-      this.$router.replace('/testing')
+      // this.$router.replace('/home')
   }
 }
 </script>
