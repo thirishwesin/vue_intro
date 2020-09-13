@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="text-danger">Exercise Component</h1>
+    <h1 class="text-danger">Item Component</h1>
     <p>This is exercise for child components.</p>
 
     <div class="row">

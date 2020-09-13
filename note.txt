@@ -1,0 +1,51 @@
+ sudo npm install -g @vue/cli
+2 - vue
+3 - vue create cli
+4 - cd cli
+5 - npm run serve (localhost:8080)
+----------------------------------
+
+1 - node_modules (added packages)
+2 - public (entry point to run)
+3 - src (my application)
+=> main.js 
+  - new Vue
+  - App.vue
+  
+=> Component (.vue)
+  - template (HTML)
+  - script (JS)
+  - style (CSS)
+
+=> UI
+  - bootstrap-vue (npm install vue bootstrap-vue bootstrap)
+
+=> Route
+  - vue-router (npm install vue-router)
+  
+=> Directory
+  - views
+    - .vue
+    - call in route
+
+=> Using API
+  - npm install axios
+
+=> Using Vuex (manage state / single source of truth)
+  - npm install vuex --save
+  - store.js (export)
+  - main.js (import / use)
+
+  - state  == data
+  - actions == methods
+  - getters == computed
+  - mutations (trace actions)
+
+  - call action from any component (this.$store.dispatch(''))
+  - call state from any component (this.$store.state.--)
+
+=> homework
+  - create route shopping cart page
+  - views / ShoppingCart.vue (show table + / - / remove)
+
+  

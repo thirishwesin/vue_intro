@@ -1,10 +1,20 @@
 <template>
-  <div>
+  <div class="row">
+    <div class="col-md-6">
+      <img :src="item.item_photo" class="img-fluid" style="width: 300px;height: 400px">
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <h3>Item Detail</h3>
+        <hr>
+    <div class="card-body">
+    <p>Name:{{item.item_name}}</p>
+    <p>Price:{{item.item_price}}</p>
     
-    <h1>{{item.item_name}}</h1>
-    <h1>{{item.item_price}}</h1>
-    <h1>{{item.item_discount}}</h1>
-
+    <p>Discount:{{item.item_discount}}</p>
+  </div>
+</div>
+</div>
   </div>
 </template>
 
@@ -36,5 +46,14 @@
 </script>
 
 <style type="text/css">
-  
+ p{
+  margin-top: 5px;
+ } 
+h3{
+  font-style: italic;
+  font-weight: bold;
+  color:#d291bc;
+}
+
+
 </style>
